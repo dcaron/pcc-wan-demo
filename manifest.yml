@@ -1,0 +1,11 @@
+---
+applications:
+- name: pcc-wan-demo
+  random-route: true
+  mem: 2G
+  path: target/pcc-wan-demo-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline
+  services:
+  - session-cache
+  env:
+     JBP_CONFIG_DEBUG: '{enabled: true}'
